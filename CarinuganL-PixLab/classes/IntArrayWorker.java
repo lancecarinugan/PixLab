@@ -100,13 +100,13 @@ public class IntArrayWorker
         }
     }
 
-    public int getCount(int number) {
+    public int getCount(int num) {
         int count = 0; 
         for (int[] rowArray : matrix)
         {
             for (int i : rowArray)
             {
-                if (i == number)
+                if (i == num)
                 { 
                     count++;
                 }

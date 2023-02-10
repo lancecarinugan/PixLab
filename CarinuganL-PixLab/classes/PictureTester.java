@@ -63,6 +63,27 @@ public class PictureTester
       huu.explore();
   }
   
+  public static void testMirrorHorizontal() {
+      Picture huu = new Picture("huu.jpg");
+      huu.explore();
+      huu.mirrorHorizontal();
+      huu.explore();
+  }
+  
+  public static void testMirrorHorizontalBottomToTop() {
+      Picture huu = new Picture("huu.jpg");
+      huu.explore();
+      huu.mirrorHorizontalBottomToTop();
+      huu.explore();
+  }
+  
+  public static void testMirrorDiagonal() {
+     Picture huu = new Picture("huu.jpg");
+     huu.explore();
+     huu.mirrorDiagonal();
+     huu.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -104,6 +125,9 @@ public class PictureTester
     testFixUnderwater();
     testMirrorVertical();
     testMirrorVerticalRightToLeft();
+    testMirrorHorizontal();
+    testMirrorHorizontalBottomToTop();
+    testMirrorDiagonal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();

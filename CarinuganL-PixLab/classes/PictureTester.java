@@ -26,6 +26,13 @@ public class PictureTester
       beach.explore();
   }
   
+  public static void testGetCountGreenOverValue() {
+      Picture beach = new Picture("beach.jpg");
+      beach.explore();
+      beach.getCountGreenOverValue(100);
+      beach.explore();
+  }
+  
   public static void testNegate() {
       Picture beach = new Picture("beach.jpg");
       beach.explore();
@@ -118,6 +125,7 @@ public class PictureTester
     // to run
     testZeroBlue();
     testKeepOnlyBlue();
+    testGetCountGreenOverValue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     testNegate();

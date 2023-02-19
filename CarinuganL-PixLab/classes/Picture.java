@@ -148,6 +148,21 @@ public class Picture extends SimplePicture
             }
         }
     }   
+    public int getCountGreenOverValue(int value) {
+    Pixel[][] pixels = this.getPixels2D();
+    int count = 0;
+    for (Pixel[] rowArray : pixels) {
+	for (Pixel pixelObj : rowArray) {
+	int greenVal = pixelObj.getGreen();
+            if (greenVal > value){
+		count++;
+        	}
+            }
+        }
+        return count;
+    }
+
+    
     
         /** Method that mirrors the picture around a 
          * vertical mirror in the center of the picture
